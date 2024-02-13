@@ -1,3 +1,18 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+}
+
+.app_container {
+  min-height: 100vh;
+  background-image: url("./components/graphics/background2.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 /* #root {
   max-width: 1280px;
   margin: 0 auto;

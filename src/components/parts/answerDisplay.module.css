@@ -1,0 +1,161 @@
+.container {
+  width: 100%;
+  height: 52px;
+
+  background-color: rgba(255, 255, 255, 0.7);
+
+  border-radius: 12px;
+  border: solid 1px black;
+
+  margin: 6px;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  display: grid;
+  grid-template-columns: 17% 6% 12% 7.5% 7.5% 7.5% 7.5% 12.5% 22.5%;
+}
+
+/* overall display */
+.notWork {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.notWork span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+/* colors for background showing correctness of an answerr */
+.wrong {
+  background-color: rgba(255, 0, 0, 0.6);
+  border-left: solid black 1px;
+  border-right: solid black 1px;
+}
+
+.right {
+  background-color: rgba(11, 187, 11, 0.6);
+  border-left: solid black 1px;
+  border-right: solid black 1px;
+}
+
+.half {
+  background-color: rgba(221, 218, 28, 0.6);
+  border-left: solid black 1px;
+  border-right: solid black 1px;
+}
+
+/* work display */
+.works {
+  display: grid;
+  grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+  grid-template-rows: 26px 26px;
+
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+}
+
+.workHolder {
+  display: inline-block;
+  text-align: center;
+  line-height: 100%;
+
+  text-shadow: 2px black;
+  /*  font-size: 40px; */
+
+  /*   border: solid black 1px;
+  border-radius: 12px;
+  margin: 2px; */
+}
+
+.workType {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-top: -2px;
+  transform: scale(1.2);
+}
+
+.workTypeWrapper {
+  overflow: hidden;
+}
+
+.workLevel {
+  margin-top: 3px;
+}
+
+.wrongWork {
+  background-color: rgba(255, 0, 0, 0.6);
+  box-shadow: 0 0 6px black;
+  border-radius: 12px;
+  margin: 2px 4px 2px;
+}
+.rightWork {
+  background-color: rgba(11, 187, 11, 0.6);
+  box-shadow: 0 0 6px black;
+  border-radius: 12px;
+  margin: 2px 4px 2px;
+}
+.halfWork {
+  background-color: rgba(221, 218, 28, 0.6);
+  box-shadow: 0 0 6px black;
+  border-radius: 12px;
+  margin: 2px 4px 2px;
+}
+
+/* types display */
+.types {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgHolder {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.typeImg {
+  width: 50px;
+  height: 50px;
+}
+
+.halfHeight {
+  width: 20px;
+}
+
+/* name display */
+.icon {
+  height: 52px;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+}
+
+/* food display */
+.foodContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.food {
+  width: 24px;
+  height: 24px;
+}

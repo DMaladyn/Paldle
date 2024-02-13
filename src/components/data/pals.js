@@ -16,9 +16,9 @@ const allPals = {
       transporting: 1,
       farming: 1,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false,
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 2,
   },
@@ -39,9 +39,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false,
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 2,
   },
@@ -62,9 +62,9 @@ const allPals = {
       transporting: 0,
       farming: 1,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 1, // 1- 8
   },
@@ -85,9 +85,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 1, // 1- 8
   },
@@ -108,9 +108,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -131,9 +131,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -154,9 +154,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -177,9 +177,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -200,9 +200,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -223,9 +223,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -246,9 +246,9 @@ const allPals = {
       transporting: 2,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: true, //true if has alpha version
     food: 8, // 1- 8
   },
@@ -269,9 +269,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -292,9 +292,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -315,9 +315,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: true, //true if has alpha version
     food: 1, // 1- 8
   },
@@ -338,9 +338,9 @@ const allPals = {
       transporting: 0,
       farming: 1,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 1, // 1- 8
   },
@@ -361,9 +361,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -384,9 +384,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -407,9 +407,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -430,9 +430,9 @@ const allPals = {
       transporting: 0,
       farming: 1,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider
+    mount: false, //Flying, ground, Glider
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -453,9 +453,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -476,9 +476,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -499,9 +499,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -522,9 +522,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -545,9 +545,9 @@ const allPals = {
       transporting: 2,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "glider", //flying, ground, glider false
+    mount: "Glider", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -568,9 +568,9 @@ const allPals = {
       transporting: 0,
       farming: 1,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 1, // 1- 8
   },
@@ -591,9 +591,9 @@ const allPals = {
       transporting: 0,
       farming: 1,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 1, // 1- 8
   },
@@ -614,9 +614,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "glider", //flying, ground, glider false
+    mount: "Glider", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -637,9 +637,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -660,9 +660,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -683,9 +683,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -706,9 +706,9 @@ const allPals = {
       transporting: 0,
       farming: 1,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -729,9 +729,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -752,9 +752,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -775,9 +775,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -798,9 +798,9 @@ const allPals = {
       transporting: 2,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "glider", //flying, ground, glider false
+    mount: "Glider", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -821,9 +821,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "glider", //flying, ground, glider false
+    mount: "Glider", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -844,9 +844,9 @@ const allPals = {
       transporting: 3,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -867,9 +867,9 @@ const allPals = {
       transporting: 2,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -890,9 +890,9 @@ const allPals = {
       transporting: 0,
       farming: 1,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -913,9 +913,9 @@ const allPals = {
       transporting: 0,
       farming: 1,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 4, // 1- 8
   },
@@ -936,9 +936,9 @@ const allPals = {
       transporting: 0,
       farming: 1,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -959,9 +959,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -982,9 +982,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -1005,9 +1005,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -1028,9 +1028,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -1051,9 +1051,9 @@ const allPals = {
       transporting: 2,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 4, // 1- 8
   },
@@ -1074,9 +1074,9 @@ const allPals = {
       transporting: 2,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 4, // 1- 8
   },
@@ -1097,9 +1097,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -1120,9 +1120,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -1143,9 +1143,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 4, // 1- 8
   },
@@ -1166,9 +1166,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -1189,9 +1189,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -1212,9 +1212,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -1235,9 +1235,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -1258,9 +1258,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "glider", //flying, ground, glider false
+    mount: "Glider", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 4, // 1- 8
   },
@@ -1281,9 +1281,9 @@ const allPals = {
       transporting: 2,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -1304,9 +1304,9 @@ const allPals = {
       transporting: 2,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -1327,9 +1327,9 @@ const allPals = {
       transporting: 3,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -1350,9 +1350,9 @@ const allPals = {
       transporting: 2,
       farming: 1,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -1373,9 +1373,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -1396,9 +1396,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 4, // 1- 8
   },
@@ -1419,9 +1419,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -1442,9 +1442,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -1465,9 +1465,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -1488,9 +1488,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -1511,9 +1511,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -1534,9 +1534,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -1557,9 +1557,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -1580,9 +1580,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -1603,9 +1603,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -1626,9 +1626,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 4, // 1- 8
   },
@@ -1649,9 +1649,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -1672,9 +1672,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 2, // 1- 8
   },
@@ -1695,9 +1695,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 6, // 1- 8
   },
@@ -1718,9 +1718,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 6, // 1- 8
   },
@@ -1741,9 +1741,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -1764,9 +1764,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -1787,9 +1787,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, mount
+    partner: "Fighting", //Fighting, Utility, mount
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -1810,9 +1810,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: true, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -1833,9 +1833,9 @@ const allPals = {
       transporting: 2,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -1856,9 +1856,9 @@ const allPals = {
       transporting: 2,
       farming: 0,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -1879,13 +1879,13 @@ const allPals = {
       transporting: 1,
       farming: 1,
     },
-    partner: "utility", //damage, utility, mount
+    partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 2, // 1- 8
   },
-  Vanwyrn: {
+  Vanwyrm: {
     index: "71", //in paldeck
     type: ["fire", "dark"], //element
     work: {
@@ -1902,13 +1902,13 @@ const allPals = {
       transporting: 3,
       farming: 0,
     },
-    partner: "both", //damage, utility, both
+    partner: "Flexible", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 6, // 1- 8
   },
-  Vanwyrn_Cryst: {
+  Vanwyrm_Cryst: {
     index: "71B", //in paldeck
     type: ["ice", "dark"], //element
     work: {
@@ -1925,9 +1925,9 @@ const allPals = {
       transporting: 3,
       farming: 0,
     },
-    partner: "both", //damage, utility, both
+    partner: "Flexible", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 6, // 1- 8
   },
@@ -1948,9 +1948,9 @@ const allPals = {
       transporting: 2,
       farming: 0,
     },
-    partner: "damage", //damage, utility, both
+    partner: "Fighting", //Fighting, Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 4, // 1- 8
   },
@@ -1971,9 +1971,9 @@ const allPals = {
       transporting: 3,
       farming: 0,
     },
-    partner: "both", //damage, utility, both
+    partner: "Flexible", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -1994,9 +1994,9 @@ const allPals = {
       transporting: 3,
       farming: 0,
     },
-    partner: "both", //damage, utility, both
+    partner: "Flexible", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -2017,9 +2017,9 @@ const allPals = {
       transporting: 2,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -2040,9 +2040,9 @@ const allPals = {
       transporting: 2,
       farming: 0,
     },
-    partner: "damage", //damage, utility, both
+    partner: "Fighting", //Fighting, Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -2063,9 +2063,9 @@ const allPals = {
       transporting: 2,
       farming: 0,
     },
-    partner: "both", //damage, utility, both
+    partner: "Flexible", //Fighting, Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -2086,9 +2086,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -2109,9 +2109,9 @@ const allPals = {
       transporting: 0,
       farming: 1,
     },
-    partner: "damage", //damage, utility, both
+    partner: "Fighting", //Fighting, Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -2132,9 +2132,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "both", //damage, utility, both
+    partner: "Flexible", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 6, // 1- 8
   },
@@ -2155,9 +2155,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "both", //damage, utility, both
+    partner: "Flexible", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 6, // 1- 8
   },
@@ -2178,9 +2178,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, both
+    partner: "Fighting", //Fighting, Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 1, // 1- 8
   },
@@ -2201,9 +2201,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, both
+    partner: "Fighting", //Fighting, Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 1, // 1- 8
   },
@@ -2224,9 +2224,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "both", //damage, utility, both
+    partner: "Flexible", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false    water ?????
+    mount: "Ground", //Flying, ground, Glider false    water ?????
     boss: true, //true if has alpha version
     food: 6, // 1- 8
   },
@@ -2247,9 +2247,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -2270,9 +2270,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -2293,9 +2293,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -2316,9 +2316,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "both", //damage, utility, both
+    partner: "Flexible", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -2339,9 +2339,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "both", //damage, utility, both
+    partner: "Flexible", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -2362,9 +2362,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -2385,9 +2385,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -2408,9 +2408,9 @@ const allPals = {
       transporting: 1,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 3, // 1- 8
   },
@@ -2431,9 +2431,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -2454,9 +2454,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -2477,9 +2477,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -2500,9 +2500,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -2523,9 +2523,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 8, // 1- 8
   },
@@ -2546,9 +2546,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 8, // 1- 8
   },
@@ -2569,9 +2569,9 @@ const allPals = {
       transporting: 4,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 8, // 1- 8
   },
@@ -2592,9 +2592,9 @@ const allPals = {
       transporting: 4,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 8, // 1- 8
   },
@@ -2615,9 +2615,9 @@ const allPals = {
       transporting: 3,
       farming: 0,
     },
-    partner: "damage", //damage, utility, both
+    partner: "Fighting", //Fighting, Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 6, // 1- 8
   },
@@ -2638,9 +2638,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 6, // 1- 8
   },
@@ -2661,9 +2661,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //damage, utility, both
+    partner: "Fighting", //Fighting, Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 5, // 1- 8
   },
@@ -2684,9 +2684,9 @@ const allPals = {
       transporting: 3,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 4, // 1- 8
   },
@@ -2707,9 +2707,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "both", //damage, utility, both
+    partner: "Flexible", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 9, // 1- 8
   },
@@ -2730,9 +2730,9 @@ const allPals = {
       transporting: 3,
       farming: 0,
     },
-    partner: "both", //damage, utility, both
+    partner: "Flexible", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 8, // 1- 8
   },
@@ -2753,9 +2753,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //damage, utility, both
+    partner: "Utility", //Fighting, Utility, Flexible
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 9, // 1- 8
   },
@@ -2776,9 +2776,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "both", //damage, utility, both
+    partner: "Flexible", //Fighting, Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -2799,9 +2799,9 @@ const allPals = {
       transporting: 2,
       farming: 0,
     },
-    partner: "damage", //fighting, utility, both
+    partner: "Fighting", //fighting, Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 6, // 1- 8
   },
@@ -2822,9 +2822,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //fighting, utility, both
+    partner: "Utility", //fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -2845,9 +2845,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "both", //fighting, utility, both
+    partner: "Flexible", //fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -2868,9 +2868,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "both", //fighting, utility, both
+    partner: "Flexible", //fighting, Utility, Flexible
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 8, // 1- 8
   },
@@ -2891,9 +2891,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "both", //fighting, utility, both
+    partner: "Flexible", //fighting, Utility, Flexible
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 8, // 1- 8
   },
@@ -2914,9 +2914,9 @@ const allPals = {
       transporting: 3,
       farming: 0,
     },
-    partner: "both", //fighting, utility, both
+    partner: "Flexible", //fighting, Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -2937,9 +2937,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //fighting (damage), utility, both
+    partner: "Fighting", //fighting (Fighting), Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 6, // 1- 8
   },
@@ -2960,9 +2960,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "damage", //fighting (damage), utility, both
+    partner: "Fighting", //fighting (Fighting), Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 6, // 1- 8
   },
@@ -2983,9 +2983,9 @@ const allPals = {
       transporting: 3,
       farming: 0,
     },
-    partner: "utility", //fighting (damage), utility, both
+    partner: "Utility", //fighting (Fighting), Utility, Flexible
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 8, // 1- 8
   },
@@ -3006,9 +3006,9 @@ const allPals = {
       transporting: 3,
       farming: 0,
     },
-    partner: "utility", //fighting (damage), utility, both
+    partner: "Utility", //fighting (Fighting), Utility, Flexible
     gear: false, //true false
-    mount: false, //flying, ground, glider false
+    mount: false, //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -3029,9 +3029,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "both", //fighting (damage), utility, both
+    partner: "Flexible", //fighting (Fighting), Utility, Flexible
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 8, // 1- 8
   },
@@ -3052,9 +3052,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //fighting (damage), utility, both
+    partner: "Utility", //fighting (Fighting), Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 9, // 1- 8
   },
@@ -3075,9 +3075,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "utility", //fighting (damage), utility, both
+    partner: "Utility", //fighting (Fighting), Utility, Flexible
     gear: true, //true false
-    mount: "ground", //flying, ground, glider false
+    mount: "Ground", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 9, // 1- 8
   },
@@ -3098,9 +3098,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "both", //fighting (damage), utility, both
+    partner: "Flexible", //fighting (Fighting), Utility, Flexible
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -3121,9 +3121,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "both", //fighting (damage), utility, both
+    partner: "Flexible", //fighting (Fighting), Utility, Flexible
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: false, //true if has alpha version
     food: 7, // 1- 8
   },
@@ -3144,9 +3144,9 @@ const allPals = {
       transporting: 0,
       farming: 0,
     },
-    partner: "both", //fighting (damage), utility, both
+    partner: "Flexible", //fighting (Fighting), Utility, Flexible
     gear: true, //true false
-    mount: "flying", //flying, ground, glider false
+    mount: "Flying", //Flying, ground, Glider false
     boss: true, //true if has alpha version
     food: 9, // 1- 8
   },
@@ -3171,9 +3171,9 @@ export default allPals;
     "ground",
   ];
 
-  let partner = ["utility", "damage", "both"];
+  let partner = ["Utility", "Fighting", "Flexible"];
 
-  let mounts = ["ground", "flying", "glider", false];
+  let mounts = ["ground", "Flying", "Glider", false];
 
   for (let i = 0; i < names.length; i++) {
     if (allPals[names[i]].index == "") errors.push(names[i]);

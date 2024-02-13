@@ -1,5 +1,6 @@
 import allPals from "../data/pals";
 import classes from "./answer.module.css";
+import AnswerDisplay from "./answerDisplay";
 
 function Answer(props) {
   const guess = allPals[props.name];
@@ -11,6 +12,7 @@ function Answer(props) {
     wrong: "rgb(230, 0, 0)",
   };
 
+  //
   let index = { index: guess.index },
     type = {},
     work = {},
@@ -26,11 +28,11 @@ function Answer(props) {
 
   //checks if values are same, withing range of 10, or more than 10 away
   if (correct.index == guess.index) {
-    index.color = colors["right"];
+    index.color = "right";
   } else if (Math.abs(indexCorrect - indexGuess) <= 10) {
-    index.color = colors["half"];
+    index.color = "half";
   } else {
-    index.color = colors["wrong"];
+    index.color = "wrong";
   }
 
   //tests if all, some or none of the types are matching
@@ -38,9 +40,9 @@ function Answer(props) {
     type["type" + i] = guess.type[i];
 
     if (correct.type.includes(guess.type[i])) {
-      type["type" + i + "Color"] = colors["right"];
+      type["type" + i + "Color"] = "right";
     } else {
-      type["type" + i + "Color"] = colors["wrong"];
+      type["type" + i + "Color"] = "wrong";
     }
   }
 
@@ -52,11 +54,11 @@ function Answer(props) {
 
     work["work" + x] = works[i];
     if (guess.work[works[i]] == correct.work[works[i]]) {
-      work["work" + x + "Color"] = colors["right"];
+      work["work" + x + "Color"] = "rightWork";
     } else if (correct.work[works[i]] != 0) {
-      work["work" + x + "Color"] = colors["half"];
+      work["work" + x + "Color"] = "halfWork";
     } else {
-      work["work" + x + "Color"] = colors["wrong"];
+      work["work" + x + "Color"] = "wrongWork";
     }
 
     x += 1;
@@ -65,59 +67,59 @@ function Answer(props) {
   //checks if partner abilities have same role
   partner.partner = guess.partner;
   if (guess.partner == correct.partner) {
-    partner.color = colors["right"];
+    partner.color = "right";
   } else if (
     ((guess.partner == "damage" || guess.partner == "utility") &&
       correct.partner == "both") ||
     ((correct.partner == "damage" || correct.partner == "utility") &&
       guess.partner == "both")
   ) {
-    partner.color = colors["half"];
+    partner.color = "half";
   } else {
-    partner.color = colors["wrong"];
+    partner.color = "wrong";
   }
 
   //checks if both have or have no special gear for them
   gear.gear = guess.gear;
   if (guess.gear == correct.gear) {
-    gear.color = colors["right"];
+    gear.color = "right";
   } else {
-    gear.color = colors["wrong"];
+    gear.color = "wrong";
   }
 
   //checks if they can be used as mount and if yes, what type
   mount.mount = guess.mount;
   if (guess.mount == correct.mount) {
-    mount.color = colors["right"];
+    mount.color = "right";
   } else if (guess.mount == false || correct.mount == false) {
-    mount.color = colors["wrong"];
+    mount.color = "wrong";
   } else {
-    mount.color = colors["half"];
+    mount.color = "half";
   }
 
   //checks if both have or have no boss/alpha version
   boss.boss = guess.boss;
   if (guess.boss == correct.boss) {
-    boss.color = colors["right"];
+    boss.color = "right";
   } else {
-    boss.color = colors["wrong"];
+    boss.color = "wrong";
   }
 
   //checks if both have same, similar or much different (difference higher than 1) of food consumption
   food.food = guess.food;
   if (guess.food == correct.food) {
-    food.color = colors["right"];
+    food.color = "right";
   } else if (Math.abs(guess.food - correct.food) <= 1) {
-    food.color = colors["half"];
+    food.color = "half";
   } else {
-    food.color = colors["wrong"];
+    food.color = "wrong";
   }
 
   return (
     <div className={classes.answer}>
-      answer {correct.index}
+      {/* answer {correct.index}
       <br />
-      {indexGuess} {index.color}
+      {index.index} {index.color}
       <br />
       {type.type0} {type.type0Color}
       <br />
@@ -132,7 +134,18 @@ function Answer(props) {
       {String(boss.boss)} {boss.color}
       <br />
       {food.food} {food.color}
-      <br />
+      <br /> */}
+      <AnswerDisplay
+        food={food}
+        index={index}
+        type={type}
+        work={work}
+        partner={partner}
+        gear={gear}
+        mount={mount}
+        boss={boss}
+        name={props.name}
+      />
     </div>
   );
 }
