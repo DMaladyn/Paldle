@@ -1,0 +1,107 @@
+.animation {
+  position: fixed;
+  top: -10px;
+  left: 0;
+}
+
+.animateDown {
+  position: absolute;
+  animation-name: fallingDown;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+.palIcon {
+  width: 80px;
+  height: 80px;
+}
+
+@keyframes fallingDown {
+  0% {
+    left: 0vw;
+    top: 0px;
+    transform: rotate(calc(10deg * 0));
+  }
+  10% {
+    left: 0vw;
+    top: 0vh;
+    transform: rotate(calc(10deg * 0));
+  }
+  20% {
+    left: -2vw;
+    top: 15vh;
+    transform: rotate(calc(10deg * 10));
+  }
+  30% {
+    left: 0vw;
+    top: 30vh;
+    transform: rotate(calc(10deg * 20));
+  }
+  40% {
+    left: 2vw;
+    top: 45vh;
+    transform: rotate(calc(10deg * 30));
+  }
+  50% {
+    left: 0vw;
+    top: 60vh;
+    transform: rotate(calc(10deg * 40));
+  }
+  60% {
+    left: -2vw;
+    top: 75vh;
+    transform: rotate(calc(10deg * 50));
+  }
+  70% {
+    left: 0vw;
+    top: 90vh;
+    transform: rotate(calc(10deg * 60));
+  }
+  80% {
+    left: 2vw;
+    top: 105vh;
+    transform: rotate(calc(10deg * 70));
+  }
+  90% {
+    left: 0vw;
+    top: 120vh;
+    transform: rotate(calc(10deg * 80));
+  }
+  100% {
+    left: -2vw;
+    top: 135vh;
+    transform: rotate(calc(10deg * 90));
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  15% {
+    left: 16vw;
+    top: -15vh;
+    transform: rotate(calc(20deg * 15));
+  }
+  35% {
+    left: 24vw;
+    top: -5vh;
+    transform: rotate(calc(20deg * 35));
+  }
+  50% {
+    left: 28vw;
+    top: 20vh;
+    transform: rotate(calc(20deg * 50));
+  }
+  75% {
+    left: 32vw;
+    top: 40vh;
+    transform: rotate(calc(20deg * 75));
+  }
+  100% {
+    left: 40vw;
+    top: 60vh;
+    transform: rotate(calc(20deg * 100));
+  }
+}

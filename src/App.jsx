@@ -6,7 +6,7 @@ import GuessPal from "./components/pages/guessPal";
 
 function App() {
   return (
-    <div className="app_container">
+    <div className="app_container customScrollbar">
       <GuessPal />
       {/*       <Pal name="pallas" /> */}
     </div>
