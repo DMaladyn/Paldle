@@ -7,7 +7,7 @@ body {
 
 .app_container {
   min-height: 100vh;
-  background-image: url("./components/graphics/background2.png");
+  background-image: url("./components/graphics/background2_Crop.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

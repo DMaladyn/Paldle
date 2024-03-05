@@ -2,12 +2,15 @@ import classes from "./victory.module.css";
 
 import Digtoise from "../icons/Digtoise.png";
 
-import { useState, forwardRef, useImperativeHandle } from "react";
+import { useState, forwardRef, useImperativeHandle, useEffect } from "react";
 
 import JSConfetti from "js-confetti";
 
 const Victory = forwardRef((props, ref) => {
+  const [imageSrc, setImageSrc] = useState(null);
+
   const [isAnimating, setIsAnimating] = useState(false);
+
   const jsConfetti = new JSConfetti();
 
   const palsToFall = [];
@@ -15,6 +18,7 @@ const Victory = forwardRef((props, ref) => {
   for (let i = 1; i < 9; i++) {
     palsToFall.push(
       <div
+        key={i}
         style={{
           position: "absolute",
           left: `${10 * i}vw`,
@@ -24,21 +28,33 @@ const Victory = forwardRef((props, ref) => {
         {isAnimating ? (
           <img
             className={`${classes.animateDown} ${classes.palIcon}`}
-            src={Digtoise}
+            src={imageSrc}
           />
         ) : null}
       </div>
     );
   }
 
+  useEffect(() => {
+    import(`../icons/${props.correctPal}.png`)
+      .then((module) => setImageSrc(module.default))
+      .catch((error) => {
+        console.error(`Failed to load image: ${error}`);
+        console.log(props.correctPal);
+      });
+  }, [props.correctPal]);
+
   useImperativeHandle(ref, () => ({
-    startAnimation() {
+    startAnimation(emoji) {
       setIsAnimating(true);
       jsConfetti.addConfetti({
-        emojis: ["🏆"], // Use the emoji as confetti
+        emojis: [emoji], // Use the emoji as confetti
         emojiSize: 70,
         confettiNumber: 30, // Number of confetti particles
       });
+    },
+    stopAnimation() {
+      setIsAnimating(false);
     },
   }));
 

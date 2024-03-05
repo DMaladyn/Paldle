@@ -1,0 +1,22 @@
+.hoverContainer {
+  width: 320px;
+  min-height: 80px;
+
+  border-radius: 20px;
+  box-shadow: 0 0 4px black;
+
+  background-color: rgb(205, 218, 228);
+
+  /*   padding: 14px 0px 0px 0px; */
+
+  text-align: left;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  position: absolute;
+
+  z-index: 5;
+
+  white-space: pre-wrap;
+}

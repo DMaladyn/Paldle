@@ -1,0 +1,101 @@
+.endContainer {
+  position: fixed;
+  top: calc(50% - 225px);
+  left: calc(50% - 300px);
+
+  width: 600px;
+  height: 350px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 0 4px black;
+
+  background-color: rgb(99, 166, 253);
+
+  animation-duration: 0.5s;
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(0.51, 0.58, 0.52, 1.55);
+
+  z-index: 10;
+}
+
+/* button size 140px */
+
+.leftButton {
+  position: absolute;
+  top: 230px;
+  left: 110px;
+}
+
+.rightButton {
+  position: absolute;
+  top: 230px;
+  left: 330px;
+}
+
+.firstLine {
+  position: absolute;
+
+  top: 20px;
+
+  width: 100%;
+
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.secondLine {
+  position: absolute;
+
+  top: 80px;
+
+  width: 100%;
+
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.thirdLine {
+  position: absolute;
+
+  top: 134px;
+
+  width: 100%;
+
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.aboveButtons {
+  position: absolute;
+
+  top: 185px;
+
+  width: 100%;
+
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.darkenBackground {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  height: 100vh;
+  width: 100vw;
+
+  background-color: rgba(179, 179, 179, 0.4);
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}

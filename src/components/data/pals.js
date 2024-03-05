@@ -1348,7 +1348,7 @@ const allPals = {
       medicine: 1, //Medicine production
       cooling: 0,
       transporting: 2,
-      farming: 1,
+      farming: 0,
     },
     partner: "Utility", //Fighting, Utility, mount
     gear: false, //true false

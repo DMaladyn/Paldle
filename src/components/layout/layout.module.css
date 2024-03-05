@@ -1,0 +1,68 @@
+.logo {
+  padding: 20px;
+  margin-left: -20px;
+
+  display: inline;
+}
+
+.logoLink {
+  width: 410px;
+  height: 200px;
+  margin: 0 auto 20px;
+}
+
+.layoutContainer {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Or any desired height */
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.personal {
+  margin: 0 auto 4px;
+
+  padding: 0 7px 0;
+
+  min-width: 320px;
+  height: 24px;
+  line-height: 24px;
+
+  display: flex;
+
+  font-size: 18px;
+  color: white;
+
+  background-color: rgba(63, 65, 194, 0.7);
+
+  box-shadow: 0 0 4px black;
+
+  border-radius: 16px;
+
+  opacity: 0.6;
+}
+
+.personal:hover {
+  opacity: 1;
+}
+
+.personalIcon {
+  height: 22px;
+  margin-left: 8px;
+  margin-right: 3px;
+}
+
+.personalLink {
+  display: flex;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+.personalLink:hover {
+  color: rgba(255, 255, 255, 0.8);
+}

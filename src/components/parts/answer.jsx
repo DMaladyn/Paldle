@@ -6,6 +6,8 @@ function Answer(props) {
   const guess = allPals[props.name];
   const correct = allPals[props.answer];
 
+  console.log(correct);
+
   const colors = {
     right: "rgb(0, 230, 0)",
     half: "rgb(255, 187, 51)",
@@ -69,10 +71,10 @@ function Answer(props) {
   if (guess.partner == correct.partner) {
     partner.color = "right";
   } else if (
-    ((guess.partner == "damage" || guess.partner == "utility") &&
-      correct.partner == "both") ||
-    ((correct.partner == "damage" || correct.partner == "utility") &&
-      guess.partner == "both")
+    ((guess.partner == "Fighting" || guess.partner == "Utility") &&
+      correct.partner == "Flexible") ||
+    ((correct.partner == "Fighting" || correct.partner == "Utility") &&
+      guess.partner == "Flexible")
   ) {
     partner.color = "half";
   } else {

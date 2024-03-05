@@ -1,0 +1,75 @@
+.linkGuessPal {
+  margin: 10px 20px 10px;
+
+  height: 90px;
+
+  width: 140px;
+
+  font-size: 30px;
+  font-weight: 600;
+
+  color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  justify-content: center;
+  vertical-align: center;
+
+  background-color: rgba(112, 184, 255, 0.9);
+
+  box-shadow: 0 0 4px black;
+
+  border-radius: 6px;
+}
+
+.linkGuessPal:hover {
+  background-color: rgba(101, 177, 253, 0.95);
+}
+
+/* lives selector */
+
+.livesButton {
+  height: 60%;
+  margin: 2.2% 2px 0 6px;
+
+  border: none;
+  box-shadow: 0 0 4px black;
+
+  background-color: rgba(73, 160, 248, 0.95);
+}
+
+.livesButton:hover {
+  background-color: rgba(59, 154, 250, 0.95);
+  cursor: pointer;
+}
+
+.livesButton:active {
+  background-color: rgba(60, 137, 214, 0.95);
+}
+
+.livesContainer {
+  display: flex;
+
+  align-items: center;
+
+  width: 130px;
+}
+
+.middleContent {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alignLeft {
+  align-self: left;
+}
+
+.alignRight {
+  align-self: right;
+}
