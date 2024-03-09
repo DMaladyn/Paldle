@@ -1,7 +1,8 @@
 import classes from "./layout.module.css";
 
+import PersonalLinks from "../parts/personalLinks";
+
 import logo from "../graphics/logo.png";
-import githubLogo from "./layoutIcons/github.png";
 
 import { Link } from "react-router-dom";
 
@@ -15,26 +16,7 @@ function Layout(props) {
 
       <main className={classes.main}>{props.children}</main>
 
-      <div className={classes.personal}>
-        Made by
-        <a
-          className={classes.personalLink}
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/DMaladyn"
-        >
-          <img className={classes.personalIcon} src={githubLogo} />
-          DMaladyn
-        </a>
-        <a
-          className={classes.personalLink}
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/DMaladyn"
-        >
-          ☕BuyMeACoffee
-        </a>
-      </div>
+      <PersonalLinks />
     </div>
   );
 }

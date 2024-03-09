@@ -1,4 +1,4 @@
-import classes from "./guessPalStreak.module.css";
+import classes from "./guessPal.module.css";
 import allPals from "../data/pals";
 import Answer from "../parts/answer";
 import Victory from "../animations/victory";
@@ -197,8 +197,6 @@ function GuessPalStreak(props) {
 
   return (
     <div className={classes.container}>
-      {correctPal}
-
       <Streak streak={currentStreak} lives={currentLives} />
 
       <Victory correctPal={correctPal} ref={animationRef} />
@@ -212,6 +210,7 @@ function GuessPalStreak(props) {
               className={classes.nameInput}
               onChange={editList}
               onClick={() => setDisplayList(true)}
+              placeholder="Guess the Pal"
             />
           ) : (
             <div
@@ -241,7 +240,7 @@ function GuessPalStreak(props) {
                         <span className={classes.listName}>{x}</span>
                       </div>
                     ) : (
-                      <span>Loading...</span>
+                      <span>{x}</span>
                     )}
                   </li>
                 ))}

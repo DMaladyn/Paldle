@@ -109,8 +109,6 @@ function GuessPal(props) {
 
   return (
     <div className={classes.container}>
-      {/* {correctPal} */}
-
       <div className={classes.info}></div>
       <div className={classes.game}>
         <div className={classes.inputHolder}>
@@ -125,6 +123,7 @@ function GuessPal(props) {
           ) : (
             <div className={classes.youWon}>Correct!</div>
           )}
+
           {displayList && gameInProgress && (
             <div
               className={`${classes.selectWindow} ${classes.customScrollbar}`}
@@ -146,7 +145,7 @@ function GuessPal(props) {
                         <span className={classes.listName}>{x}</span>
                       </div>
                     ) : (
-                      <span>Loading...</span>
+                      <span>{x}</span>
                     )}
                   </li>
                 ))}
