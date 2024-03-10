@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Layout(props) {
   return (
     <div className={classes.layoutContainer}>
-      <Link className={classes.logoLink} to="/">
+      <Link className={classes.logoLink} to="/Paldle">
         <img className={classes.logo} src={logo}></img>
       </Link>
       <br></br>
