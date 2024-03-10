@@ -26,7 +26,7 @@ function StreakLink(props) {
       onMouseEnter={() => setShowLivesSelector(true)}
       onMouseLeave={() => setShowLivesSelector(false)}
       style={{ textDecoration: "none" }}
-      to={`/streak?hp=${startingLives}`}
+      to={`/Paldle/streak?hp=${startingLives}`}
       onClick={props.loseStreak ? () => props.loseStreak() : null}
     >
       <div className={classes.linkGuessPal}>

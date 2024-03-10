@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import classes from "./answerDisplay.module.css";
 
-import food from "../icons/food.png";
+/* import food from "../../public/icons/food.png"; */
 import allPals from "../data/pals";
 
-import kindling from "../iconsWork/kindling.png";
+/* import kindling from "../iconsWork/kindling.png";
 import watering from "../iconsWork/watering.png";
 import planting from "../iconsWork/planting.png";
 import electricity from "../iconsWork/electricity.png";
@@ -25,7 +25,7 @@ import grass from "../iconsType/grass.png";
 import dragon from "../iconsType/dragon.png";
 import electric from "../iconsType/electric.png";
 import neutral from "../iconsType/neutral.png";
-import ground from "../iconsType/ground.png";
+import ground from "../iconsType/ground.png"; */
 /* test to update  */
 
 function AnswerDisplay(props) {
@@ -35,7 +35,13 @@ function AnswerDisplay(props) {
   const workDisplay = [];
 
   for (let i = 0; i < props.food.food; i++) {
-    foodDisplay.push(<img className={classes.food} src={food}></img>);
+    foodDisplay.push(
+      <img
+        className={classes.food}
+        src={import.meta.env.PUBLIC_URL + "icons/food.png"}
+        alt="logo"
+      ></img>
+    );
   }
 
   for (let i = 0; i < Object.keys(props.work).length / 2; i++) {

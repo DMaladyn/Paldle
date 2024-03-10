@@ -1,7 +1,5 @@
 import classes from "./victory.module.css";
 
-import Digtoise from "../icons/Digtoise.png";
-
 import { useState, forwardRef, useImperativeHandle, useEffect } from "react";
 
 import JSConfetti from "js-confetti";
