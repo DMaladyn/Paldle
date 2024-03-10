@@ -69,7 +69,7 @@ function AnswerDisplay(props) {
       .catch((error) => {
         console.error(`Failed to load image: ${error}`);
       });
-  }, [props.name]); */
+  }, [props.name]); test*/
 
   const multipleTypes = props.type.type1 != null;
 
