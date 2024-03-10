@@ -230,18 +230,14 @@ function GuessPalStreak(props) {
                     key={index}
                     onClick={() => makeGuess(x)}
                   >
-                    {imageSources[x] ? (
-                      <div className={classes.listElement}>
-                        <img
-                          className={classes.listImg}
-                          src={imageSources[x]}
-                          alt={x}
-                        />
-                        <span className={classes.listName}>{x}</span>
-                      </div>
-                    ) : (
-                      <span>{x}</span>
-                    )}
+                    <div className={classes.listElement}>
+                      <img
+                        className={classes.listImg}
+                        src={`/Paldle/icons/${x}.png`}
+                        alt={""}
+                      />
+                      <span className={classes.listName}>{x}</span>
+                    </div>
                   </li>
                 ))}
               </ul>

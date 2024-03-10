@@ -135,7 +135,15 @@ function GuessPal(props) {
                     key={index}
                     onClick={() => makeGuess(x)}
                   >
-                    {imageSources[x] ? (
+                    <div className={classes.listElement}>
+                      <img
+                        className={classes.listImg}
+                        src={`/Paldle/icons/${x}.png`}
+                        alt={""}
+                      />
+                      <span className={classes.listName}>{x}</span>
+                    </div>
+                    {/* {imageSources[x] ? (
                       <div className={classes.listElement}>
                         <img
                           className={classes.listImg}
@@ -146,7 +154,7 @@ function GuessPal(props) {
                       </div>
                     ) : (
                       <span>{x}</span>
-                    )}
+                    )} */}
                   </li>
                 ))}
               </ul>
