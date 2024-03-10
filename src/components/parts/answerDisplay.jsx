@@ -37,11 +37,7 @@ function AnswerDisplay(props) {
 
   for (let i = 0; i < props.food.food; i++) {
     foodDisplay.push(
-      <img
-        className={classes.food}
-        src={import.meta.env.PUBLIC_URL + "icons/food.png"}
-        alt="logo"
-      ></img>
+      <img className={classes.food} src="/icons/food.png" alt="logo"></img>
     );
   }
 
