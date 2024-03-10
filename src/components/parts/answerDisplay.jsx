@@ -27,6 +27,8 @@ import electric from "../iconsType/electric.png";
 import neutral from "../iconsType/neutral.png";
 import ground from "../iconsType/ground.png"; */
 
+/* test to update */
+
 function AnswerDisplay(props) {
   const [imageSrc, setImageSrc] = useState(null);
 
