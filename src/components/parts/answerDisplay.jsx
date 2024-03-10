@@ -28,6 +28,8 @@ import neutral from "../iconsType/neutral.png";
 import ground from "../iconsType/ground.png"; */
 /* test to update e */
 
+/* test to update */
+
 function AnswerDisplay(props) {
   const [imageSrc, setImageSrc] = useState(null);
 
