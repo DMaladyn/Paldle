@@ -63,13 +63,13 @@ function AnswerDisplay(props) {
     );
   }
 
-  useEffect(() => {
+  /*   useEffect(() => {
     import(`../icons/${props.name}.png`)
       .then((module) => setImageSrc(module.default))
       .catch((error) => {
         console.error(`Failed to load image: ${error}`);
       });
-  }, [props.name]);
+  }, [props.name]); */
 
   const multipleTypes = props.type.type1 != null;
 
