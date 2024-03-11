@@ -92,8 +92,8 @@ function CategoriesBar() {
               55,
               createRules(
                 "Correct Pal is different type",
-                "",
-                "Type matches at least one of Correct Pal's types"
+                "Type matches one of Correct Pal's types",
+                "Type matches Correct Pal's type"
               )
             )
           }

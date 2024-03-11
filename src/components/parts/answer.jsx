@@ -42,7 +42,11 @@ function Answer(props) {
     type["type" + i] = guess.type[i];
 
     if (correct.type.includes(guess.type[i])) {
-      type["type" + i + "Color"] = "right";
+      if (correct.type.length == 1) {
+        type["type" + i + "Color"] = "right";
+      } else {
+        type["type" + i + "Color"] = "half";
+      }
     } else {
       type["type" + i + "Color"] = "wrong";
     }
