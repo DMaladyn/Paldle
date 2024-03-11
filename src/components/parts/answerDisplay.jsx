@@ -1,43 +1,24 @@
-import { useState, useEffect } from "react";
+/* import { useState, useEffect } from "react"; */
 import classes from "./answerDisplay.module.css";
 
 /* import food from "../../public/icons/food.png"; */
 import allPals from "../data/pals";
 
-/* import kindling from "../iconsWork/kindling.png";
-import watering from "../iconsWork/watering.png";
-import planting from "../iconsWork/planting.png";
-import electricity from "../iconsWork/electricity.png";
-import handiwork from "../iconsWork/handiwork.png";
-import gathering from "../iconsWork/gathering.png";
-import lumbering from "../iconsWork/lumbering.png";
-import mining from "../iconsWork/mining.png";
-import medicine from "../iconsWork/medicine.png";
-import cooling from "../iconsWork/cooling.png";
-import transporting from "../iconsWork/transporting.png";
-import farming from "../iconsWork/farming.png";
-
-import water from "../iconsType/water.png";
-import ice from "../iconsType/ice.png";
-import fire from "../iconsType/fire.png";
-import dark from "../iconsType/dark.png";
-import grass from "../iconsType/grass.png";
-import dragon from "../iconsType/dragon.png";
-import electric from "../iconsType/electric.png";
-import neutral from "../iconsType/neutral.png";
-import ground from "../iconsType/ground.png"; */
-
 /* test to update */
 
 function AnswerDisplay(props) {
-  const [imageSrc, setImageSrc] = useState(null);
+  /* const [imageSrc, setImageSrc] = useState(null); */
 
   const foodDisplay = [];
   const workDisplay = [];
 
   for (let i = 0; i < props.food.food; i++) {
     foodDisplay.push(
-      <img className={classes.food} src="/icons/food.png" alt="logo"></img>
+      <img
+        className={classes.food}
+        src="/Paldle/icons/food.png"
+        alt="logo"
+      ></img>
     );
   }
 
@@ -53,7 +34,7 @@ function AnswerDisplay(props) {
         </span>
         <span className={classes.workTypeWrapper}>
           <img
-            src={eval(eval("props.work.work" + i))}
+            src={`/Paldle/iconsWork/${eval("props.work.work" + i)}.png`}
             className={`${classes.workType} ${
               classes[props.work.work]
             }${i}Color`}
@@ -63,20 +44,15 @@ function AnswerDisplay(props) {
     );
   }
 
-  /*   useEffect(() => {
-    import(`../icons/${props.name}.png`)
-      .then((module) => setImageSrc(module.default))
-      .catch((error) => {
-        console.error(`Failed to load image: ${error}`);
-      });
-  }, [props.name]); test*/
-
   const multipleTypes = props.type.type1 != null;
 
   return (
     <div className={classes.container}>
       <div className={`${classes.notWork} ${classes.name}`}>
-        <img className={classes.icon} src={imageSrc}></img>
+        <img
+          className={classes.icon}
+          src={`/Paldle/icons/${props.name}.png`}
+        ></img>
         <span>{props.name}</span>
       </div>
 
@@ -89,13 +65,19 @@ function AnswerDisplay(props) {
         <span
           className={`${classes[props.type.type0Color]} ${classes.imgHolder}`}
         >
-          <img className={classes.typeImg} src={eval(props.type.type0)}></img>
+          <img
+            className={classes.typeImg}
+            src={`/Paldle/iconsType/${props.type.type0}.png`}
+          ></img>
         </span>
         {multipleTypes ? (
           <span
             className={`${classes[props.type.type1Color]} ${classes.imgHolder}`}
           >
-            <img className={classes.typeImg} src={eval(props.type.type1)}></img>
+            <img
+              className={classes.typeImg}
+              src={`/Paldle/iconsType/${props.type.type1}.png`}
+            ></img>
           </span>
         ) : null}
       </span>

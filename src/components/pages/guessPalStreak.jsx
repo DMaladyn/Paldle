@@ -50,23 +50,18 @@ function GuessPalStreak(props) {
 
   const [loseScreen, setLoseScreen] = useState(false);
 
-  useEffect(
-    () => {
-      const loadImages = async () => {
-        const loadedImages = {};
-        for (const name of palsList) {
-          const image = await import(`../icons/${name}.png`);
-          loadedImages[name] = image.default;
-        }
-        setImageSources(loadedImages);
-      };
+  /*   useEffect(() => {
+    const loadImages = async () => {
+      const loadedImages = {};
+      for (const name of palsList) {
+        const image = await import(`../icons/${name}.png`);
+        loadedImages[name] = image.default;
+      }
+      setImageSources(loadedImages);
+    };
 
-      loadImages();
-    },
-    [
-      /* palsList */
-    ]
-  );
+    loadImages();
+  }, []); */
 
   function makeGuess(name) {
     // add guess to the list of guesses using answer module

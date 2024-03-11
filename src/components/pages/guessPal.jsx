@@ -2,7 +2,6 @@ import classes from "./guessPal.module.css";
 import allPals from "../data/pals";
 import Answer from "../parts/answer";
 import Victory from "../animations/victory";
-import Streak from "../parts/streak";
 import EndScreenTemplate from "../parts/endScreenTemplate";
 import CategoriesBar from "../parts/categoriesBar";
 import { useState, useEffect, useRef } from "react";
@@ -38,23 +37,18 @@ function GuessPal(props) {
 
   const [imageSources, setImageSources] = useState({});
 
-  useEffect(
-    () => {
-      const loadImages = async () => {
-        const loadedImages = {};
-        for (const name of palsList) {
-          const image = await import(`../icons/${name}.png`);
-          loadedImages[name] = image.default;
-        }
-        setImageSources(loadedImages);
-      };
+  /*   useEffect(() => {
+    const loadImages = async () => {
+      const loadedImages = {};
+      for (const name of palsList) {
+        const image = await import(`../icons/${name}.png`);
+        loadedImages[name] = image.default;
+      }
+      setImageSources(loadedImages);
+    };
 
-      loadImages();
-    },
-    [
-      /* palsList */
-    ]
-  );
+    loadImages();
+  }, []); */
 
   function makeGuess(name) {
     // add guess to the list of guesses using answer module
@@ -143,18 +137,6 @@ function GuessPal(props) {
                       />
                       <span className={classes.listName}>{x}</span>
                     </div>
-                    {/* {imageSources[x] ? (
-                      <div className={classes.listElement}>
-                        <img
-                          className={classes.listImg}
-                          src={imageSources[x]}
-                          alt={""}
-                        />
-                        <span className={classes.listName}>{x}</span>
-                      </div>
-                    ) : (
-                      <span>{x}</span>
-                    )} */}
                   </li>
                 ))}
               </ul>
