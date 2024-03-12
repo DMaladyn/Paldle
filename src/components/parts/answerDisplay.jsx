@@ -46,7 +46,7 @@ function AnswerDisplay(props) {
     <div className={classes.container}>
       <div className={`${classes.notWork} ${classes.name}`}>
         <img className={classes.icon} src={`/icons/${props.name}.png`}></img>
-        <span>{props.name}</span>
+        <span>{props.name.replace(/_/g, " ")}</span>
       </div>
 
       <span className={`${classes.notWork} ${classes[props.index.color]}`}>

@@ -135,7 +135,9 @@ function GuessPal(props) {
                         src={`/icons/${x}.png`}
                         alt={""}
                       />
-                      <span className={classes.listName}>{x}</span>
+                      <span className={classes.listName}>
+                        {x.replace(/_/g, " ")}
+                      </span>
                     </div>
                   </li>
                 ))}
@@ -152,7 +154,7 @@ function GuessPal(props) {
       {winScreen ? (
         <EndScreenTemplate
           firstLine={`You Won!`}
-          secondLine={`Today's Pal was ${props.correctPal}`}
+          secondLine={`Today's Pal was ${props.correctPal.replace(/_/g, " ")}`}
           aboveButtons={`Continue playing?`}
           firstButton={`home`}
           secondButton={`streak`}

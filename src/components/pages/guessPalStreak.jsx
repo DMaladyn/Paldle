@@ -231,7 +231,9 @@ function GuessPalStreak(props) {
                         src={`/icons/${x}.png`}
                         alt={""}
                       />
-                      <span className={classes.listName}>{x}</span>
+                      <span className={classes.listName}>
+                        {x.replace(/_/g, " ")}
+                      </span>
                     </div>
                   </li>
                 ))}
@@ -247,7 +249,7 @@ function GuessPalStreak(props) {
       {loseScreen ? (
         <EndScreenTemplate
           firstLine={`You Lost!`}
-          secondLine={`Correct Pal was ${lastPal}`}
+          secondLine={`Correct Pal was ${lastPal.replace(/_/g, " ")}`}
           thirdLine={
             lastStreakScore >= Number(highscore)
               ? `New Highscore: ${lastStreakScore}`
