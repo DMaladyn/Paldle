@@ -132,7 +132,7 @@ function GuessPal(props) {
                     <div className={classes.listElement}>
                       <img
                         className={classes.listImg}
-                        src={`/Paldle/icons/${x}.png`}
+                        src={`/icons/${x}.png`}
                         alt={""}
                       />
                       <span className={classes.listName}>{x}</span>

@@ -14,11 +14,7 @@ function AnswerDisplay(props) {
 
   for (let i = 0; i < props.food.food; i++) {
     foodDisplay.push(
-      <img
-        className={classes.food}
-        src="/Paldle/icons/food.png"
-        alt="logo"
-      ></img>
+      <img className={classes.food} src="/icons/food.png" alt="logo"></img>
     );
   }
 
@@ -34,7 +30,7 @@ function AnswerDisplay(props) {
         </span>
         <span className={classes.workTypeWrapper}>
           <img
-            src={`/Paldle/iconsWork/${eval("props.work.work" + i)}.png`}
+            src={`/iconsWork/${eval("props.work.work" + i)}.png`}
             className={`${classes.workType} ${
               classes[props.work.work]
             }${i}Color`}
@@ -49,10 +45,7 @@ function AnswerDisplay(props) {
   return (
     <div className={classes.container}>
       <div className={`${classes.notWork} ${classes.name}`}>
-        <img
-          className={classes.icon}
-          src={`/Paldle/icons/${props.name}.png`}
-        ></img>
+        <img className={classes.icon} src={`/icons/${props.name}.png`}></img>
         <span>{props.name}</span>
       </div>
 
@@ -67,7 +60,7 @@ function AnswerDisplay(props) {
         >
           <img
             className={classes.typeImg}
-            src={`/Paldle/iconsType/${props.type.type0}.png`}
+            src={`/iconsType/${props.type.type0}.png`}
           ></img>
         </span>
         {multipleTypes ? (
@@ -76,7 +69,7 @@ function AnswerDisplay(props) {
           >
             <img
               className={classes.typeImg}
-              src={`/Paldle/iconsType/${props.type.type1}.png`}
+              src={`/iconsType/${props.type.type1}.png`}
             ></img>
           </span>
         ) : null}

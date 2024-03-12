@@ -72,15 +72,15 @@ function App() {
       <Layout>
         <Routes>
           <Route
-            path="/Paldle/daily"
+            path="/daily"
             element={<GuessPal mode="daily" correctPal={correctPal} />}
           />
           <Route
-            path="/Paldle/streak"
+            path="/streak"
             element={<GuessPalStreak mode="streak" />}
             key={Math.floor(Math.random() * 1000)}
           />
-          <Route path="/Paldle" element={<MainPage />} />
+          <Route path="/" element={<MainPage />} />
         </Routes>
       </Layout>
     </div>
