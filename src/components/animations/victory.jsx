@@ -26,14 +26,14 @@ const Victory = forwardRef((props, ref) => {
         {isAnimating ? (
           <img
             className={`${classes.animateDown} ${classes.palIcon}`}
-            src={imageSrc}
+            src={`/icons/${props.correctPal}.png`}
           />
         ) : null}
       </div>
     );
   }
 
-  useEffect(() => {
+  /*   useEffect(() => {
     import(`../icons/${props.correctPal}.png`)
       .then((module) => setImageSrc(module.default))
       .catch((error) => {
@@ -41,7 +41,7 @@ const Victory = forwardRef((props, ref) => {
         console.log(props.correctPal);
       });
   }, [props.correctPal]);
-
+ */
   useImperativeHandle(ref, () => ({
     startAnimation(emoji) {
       setIsAnimating(true);
