@@ -9,7 +9,7 @@ import allPals from "./components/data/pals";
 
 import { Route, Routes } from "react-router-dom";
 
-function App(props) {
+function App() {
   //all names of pals
   const allNames = Object.keys(allPals);
   //order that determines what is your daily pal
@@ -70,10 +70,8 @@ function App(props) {
 
   return (
     <div className="app_container">
-      {props.children}
-      {/* manages which element will be displayed inside layout */}
-      {/* <Layout>
-        
+      <Layout>
+        {/* manages which element will be displayed inside layout */}
         <Routes>
           <Route
             path="/daily"
@@ -86,7 +84,7 @@ function App(props) {
           />
           <Route path="/" element={<MainPage />} />
         </Routes>
-      </Layout> */}
+      </Layout>
     </div>
   );
 }
