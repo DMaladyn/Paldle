@@ -5,22 +5,27 @@ import HoverExplanation from "./hoverExplanation";
 import { useState } from "react";
 
 function CategoriesBar() {
+  //position to control position of hover window, visibility to set its opacity and text to change category description
   const [position, setPosition] = useState({ bottom: 0, left: 0 });
   const [visibility, setVisibility] = useState(0);
   const [text, setText] = useState("");
 
+  //move hover window to specified spot above category, and set text inside to description of that category
   function moveHoverWindow(x, y, description) {
     setText(description);
     setPosition({ bottom: y, left: x });
     setVisibility(1);
   }
 
+  //hides hover window and moves it to default position
   function hideHoverWindow() {
     setText("");
     setPosition({ bottom: 55, left: 0 });
     setVisibility(0);
   }
 
+  //function that creates div to be displayed inside informational window that appears
+  //when you hover over category
   function createRules(red, yellow, green) {
     return (
       <div
@@ -61,6 +66,7 @@ function CategoriesBar() {
 
   return (
     <div className={classes.categoriesContainer}>
+      {/* passing values to HoverExplaination element */}
       <HoverExplanation
         visibility={visibility}
         position={position}
@@ -68,6 +74,7 @@ function CategoriesBar() {
       />
       <div className={classes.categories}>
         <span>Name</span>
+        {/* declaring position and description each category - first width (left) in %, second height (bottom) in px*/}
         <span
           onMouseOut={() => hideHoverWindow()}
           onMouseOver={() =>

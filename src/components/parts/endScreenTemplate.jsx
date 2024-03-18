@@ -4,8 +4,10 @@ import CustomLink from "./customLink";
 import StreakLink from "./streakLink";
 
 function EndScreenTemplate(props) {
+  //declares different kind of buttons there so when used in different element they dont haveto pass whole buttons
+  //but instead they can only pass name of button
   const buttons = {
-    home: <CustomLink text="🏠Home" address="/" />,
+    home: <CustomLink text="🏠Home" path="/" />,
     streak: <StreakLink />,
     streakLose: (
       <StreakLink

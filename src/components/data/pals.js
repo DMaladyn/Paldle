@@ -1,3 +1,7 @@
+//list of all Pals with their index, type, work ability, partner skill (whether it is for combat, utility or in between),
+//availability of unique pal gear, if they are mount - and if yes what kind, if they have boss version
+//and amount of food they consume from 1 to 10
+
 const allPals = {
   Lamball: {
     index: "1",

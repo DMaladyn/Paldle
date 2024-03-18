@@ -5,14 +5,13 @@ import { useState, forwardRef, useImperativeHandle, useEffect } from "react";
 import JSConfetti from "js-confetti";
 
 const Victory = forwardRef((props, ref) => {
-  const [imageSrc, setImageSrc] = useState(null);
-
   const [isAnimating, setIsAnimating] = useState(false);
 
   const jsConfetti = new JSConfetti();
 
   const palsToFall = [];
 
+  //creates array of images of correctPal that will fall top to bottom when animation is called
   for (let i = 1; i < 9; i++) {
     palsToFall.push(
       <div
@@ -33,22 +32,14 @@ const Victory = forwardRef((props, ref) => {
     );
   }
 
-  /*   useEffect(() => {
-    import(`../icons/${props.correctPal}.png`)
-      .then((module) => setImageSrc(module.default))
-      .catch((error) => {
-        console.error(`Failed to load image: ${error}`);
-        console.log(props.correctPal);
-      });
-  }, [props.correctPal]);
- */
+  //allows parent to call for animation to start/stop
   useImperativeHandle(ref, () => ({
     startAnimation(emoji) {
       setIsAnimating(true);
       jsConfetti.addConfetti({
-        emojis: [emoji], // Use the emoji as confetti
+        emojis: [emoji],
         emojiSize: 70,
-        confettiNumber: 30, // Number of confetti particles
+        confettiNumber: 30,
       });
     },
     stopAnimation() {

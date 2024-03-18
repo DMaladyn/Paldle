@@ -1,6 +1,7 @@
 import classes from "./hoverExplanation.module.css";
 
 function HoverExplanation(props) {
+  //takes in position, visibility and text, and then positions itself accordingly, with proper opacity and text
   return (
     <div
       style={{

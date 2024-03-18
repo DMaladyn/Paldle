@@ -6,15 +6,13 @@ function Answer(props) {
   const guess = allPals[props.name];
   const correct = allPals[props.answer];
 
-  console.log(correct);
-
-  const colors = {
+  /*   const colors = {
     right: "rgb(0, 230, 0)",
     half: "rgb(255, 187, 51)",
     wrong: "rgb(230, 0, 0)",
-  };
+  }; */
 
-  //
+  //all values will be stored inside thees objects and later passed to be displayed in answerDisplay
   let index = { index: guess.index },
     type = {},
     work = {},
@@ -123,24 +121,6 @@ function Answer(props) {
 
   return (
     <div className={classes.answer}>
-      {/* answer {correct.index}
-      <br />
-      {index.index} {index.color}
-      <br />
-      {type.type0} {type.type0Color}
-      <br />
-      work {work.work0}
-      <br />
-      {partner.partner} {partner.color}
-      <br />
-      {String(gear.gear)} {gear.color}
-      <br />
-      {String(mount.mount)} {mount.color}
-      <br />
-      {String(boss.boss)} {boss.color}
-      <br />
-      {food.food} {food.color}
-      <br /> */}
       <AnswerDisplay
         food={food}
         index={index}

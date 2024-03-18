@@ -3,6 +3,7 @@ import classes from "./personalLinks.module.css";
 import githubLogo from "../layoutIcons/github.png";
 
 function PersonalLinks() {
+  //my personal links, lie github
   return (
     <div className={classes.personal}>
       Made by

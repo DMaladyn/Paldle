@@ -11,6 +11,7 @@ import { useState, useEffect, useRef } from "react";
 function GuessPalStreak(props) {
   const [correctPal, setCorrectPal] = useState();
 
+  //sets correct pal at the start of game
   useEffect(() => {
     let keys = Object.keys(allPals);
     let randomIndex = Math.floor(Math.random() * keys.length);
@@ -41,27 +42,12 @@ function GuessPalStreak(props) {
   //pal that was correct one during lost attempt
   const [lastPal, setLastPal] = useState();
 
-  const [imageSources, setImageSources] = useState({});
-
   const [currentStreak, setCurrentStreak] = useState(0);
   const [lastStreakScore, setLastStreakScore] = useState(0);
 
   const [currentLives, setCurrentLives] = useState(startingLives);
 
   const [loseScreen, setLoseScreen] = useState(false);
-
-  /*   useEffect(() => {
-    const loadImages = async () => {
-      const loadedImages = {};
-      for (const name of palsList) {
-        const image = await import(`../icons/${name}.png`);
-        loadedImages[name] = image.default;
-      }
-      setImageSources(loadedImages);
-    };
-
-    loadImages();
-  }, []); */
 
   function makeGuess(name) {
     // add guess to the list of guesses using answer module
@@ -87,6 +73,7 @@ function GuessPalStreak(props) {
     inputRef.current.value = "";
   }
 
+  //limits pals on the display list to the ones that contain specified substring
   function editList(event) {
     const name = event.target.value;
     const matchingNames = [];
@@ -100,6 +87,7 @@ function GuessPalStreak(props) {
     setPalsList(matchingNames);
   }
 
+  //reduces amount of lives and checks if they reached 0
   function streakAnswerWrong() {
     setCurrentLives(currentLives - 1);
 
@@ -126,14 +114,17 @@ function GuessPalStreak(props) {
     setAllNames(Object.keys(allPals));
     setPalsList(Object.keys(allPals));
 
+    //pics random index from array of list of pals
     let keys = Object.keys(allPals);
     let randomIndex = Math.floor(Math.random() * keys.length);
 
     animationRef.current.startAnimation("❌");
 
+    //sets currect correct pal as LastPal and shows end screen
     setLastPal(correctPal);
     setLoseScreen(true);
 
+    //starts timeout to start new round with new correctPal
     setTimeout(() => {
       setGameInProgress(true);
 
@@ -144,6 +135,8 @@ function GuessPalStreak(props) {
     }, 3000);
   }
 
+  //increases streak, sets lives to starting lives selected at the start, starts winning animation,
+  //resets all values to default and sets timer to start new round
   function youWonStreak() {
     setCurrentLives(startingLives);
     setCurrentStreak(currentStreak + 1);
@@ -176,6 +169,8 @@ function GuessPalStreak(props) {
     setLastStreakScore(0);
   }
 
+  //adds event listener that checks if used click was inside or outside input element
+  //and if it was outside it hides display list
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (inputRef.current && !inputRef.current.contains(event.target)) {
@@ -214,6 +209,8 @@ function GuessPalStreak(props) {
               Generating New Pal...
             </div>
           )}
+
+          {/* if conditions are met it displays list of pals matching string inside input */}
           {displayList && gameInProgress && (
             <div
               className={`${classes.selectWindow} ${classes.customScrollbar}`}
@@ -246,6 +243,7 @@ function GuessPalStreak(props) {
       </div>
       <div className={classes.more}></div>
 
+      {/* loseScreen is on the bottom to make sure it will display on top of other elements*/}
       {loseScreen ? (
         <EndScreenTemplate
           firstLine={`You Lost!`}

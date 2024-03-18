@@ -58,6 +58,7 @@ function App() {
     107, 124, 17, 78, 30, 76, 13,
   ];
 
+  //sets correctPal for daily mode depending on local time
   const timestamp = new Date(2024, 1, 24, 0, 0, 0).getTime();
 
   console.log((Date.now() - timestamp) / 86400000);
@@ -70,6 +71,7 @@ function App() {
   return (
     <div className="app_container">
       <Layout>
+        {/* manages which element will be displayed inside layout */}
         <Routes>
           <Route
             path="/daily"

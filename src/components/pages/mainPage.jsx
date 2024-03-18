@@ -8,11 +8,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function MainPage() {
+  //main page with links to different game modes
   return (
     <div>
       <div className={classes.select}>Select Game Mode</div>
       <div className={classes.gamemodes}>
-        <CustomLink text="📅Daily" address="/daily" />
+        <CustomLink text="📅Daily" path="/daily" />
         <StreakLink />
       </div>
     </div>

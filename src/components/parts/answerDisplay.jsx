@@ -1,23 +1,19 @@
-/* import { useState, useEffect } from "react"; */
 import classes from "./answerDisplay.module.css";
 
-/* import food from "../../public/icons/food.png"; */
 import allPals from "../data/pals";
 
-/* test to update */
-
 function AnswerDisplay(props) {
-  /* const [imageSrc, setImageSrc] = useState(null); */
-
   const foodDisplay = [];
   const workDisplay = [];
 
+  //creates array of images of food icons with length dependant on the amount of food consumed by pal
   for (let i = 0; i < props.food.food; i++) {
     foodDisplay.push(
       <img className={classes.food} src="/icons/food.png" alt="logo"></img>
     );
   }
 
+  //creates an array that show whether or not guess pal work capabilities are matching correct pal
   for (let i = 0; i < Object.keys(props.work).length / 2; i++) {
     workDisplay.push(
       <span
