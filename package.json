@@ -1,5 +1,6 @@
 {
   "name": "paldle",
+  "homepage": "https://paldle.xyz/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
