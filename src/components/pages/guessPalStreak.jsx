@@ -246,8 +246,9 @@ function GuessPalStreak(props) {
       {/* loseScreen is on the bottom to make sure it will display on top of other elements*/}
       {loseScreen ? (
         <EndScreenTemplate
+          pal={lastPal}
           firstLine={`You Lost!`}
-          secondLine={`Correct Pal was ${lastPal.replace(/_/g, " ")}`}
+          secondLine={`Correct Pal was`}
           thirdLine={
             lastStreakScore >= Number(highscore)
               ? `New Highscore: ${lastStreakScore}`

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: WhitePine;
+  src: url(../../WhitePine-Regular.otf);
+}
+
 .endContainer {
   position: fixed;
   top: calc(50% - 225px);
@@ -17,6 +22,8 @@
   animation-timing-function: cubic-bezier(0.51, 0.58, 0.52, 1.55);
 
   z-index: 10;
+
+  /* font-family: WhitePine; */
 }
 
 /* button size 140px */
@@ -47,6 +54,10 @@
 .secondLine {
   position: absolute;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   top: 80px;
 
   width: 100%;
@@ -76,6 +87,20 @@
   font-size: 30px;
   font-weight: 600;
 }
+
+.image {
+  width: 50px;
+  height: 50px;
+
+  -webkit-filter: drop-shadow(2px 2px 4px #222);
+  filter: drop-shadow(2px 2px 4px #222);
+}
+
+/* .firstLine,
+.secondLine,
+.thirdLine {
+  width: 400px;
+} */
 
 .darkenBackground {
   position: fixed;

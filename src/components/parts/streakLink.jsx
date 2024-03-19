@@ -34,7 +34,10 @@ function StreakLink(props) {
       to={`/streak?hp=${startingLives}`}
       onClick={props.loseStreak ? () => props.loseStreak() : null}
     >
-      <div className={classes.linkGuessPal}>
+      <div
+        style={{ fontSize: props.fontSize }}
+        className={classes.linkGuessPal}
+      >
         🔥Streak&nbsp;
         {showLivesSelector ? (
           <span className={classes.livesContainer}>

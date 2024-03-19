@@ -28,8 +28,18 @@ function EndScreenTemplate(props) {
 
       <div className={classes.endContainer}>
         <div className={classes.firstLine}>{props.firstLine}</div>
-        <div className={classes.secondLine}>{props.secondLine}</div>
+        <div className={classes.secondLine}>
+          {props.secondLine}
+          &nbsp;
+          <img src={`icons/${props.pal}.png`} className={classes.image} />
+          &nbsp;
+          {props.pal.replace(/_/g, " ")}
+        </div>
         <div className={classes.thirdLine}>{props.thirdLine}</div>
+
+        {/* <div className={classes.image}>
+          <img src="icons/Digtoise.png" />
+        </div> */}
 
         <div className={classes.aboveButtons}>{props.aboveButtons}</div>
 

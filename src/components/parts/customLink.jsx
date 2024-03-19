@@ -6,7 +6,12 @@ function CustomLink(props) {
   //takes in path and text tp be displayed
   return (
     <Link style={{ textDecoration: "none" }} to={props.path}>
-      <div className={classes.linkGuessPal}>{props.text}</div>
+      <div
+        style={{ fontSize: props.fontSize }}
+        className={classes.linkGuessPal}
+      >
+        {props.text}
+      </div>
     </Link>
   );
 }

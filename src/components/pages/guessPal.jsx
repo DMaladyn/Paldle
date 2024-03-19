@@ -147,8 +147,9 @@ function GuessPal(props) {
       {/* winscreen is on the bottom to make sure it will display on top of other elements*/}
       {winScreen ? (
         <EndScreenTemplate
+          pal={correctPal}
           firstLine={`You Won!`}
-          secondLine={`Today's Pal was ${props.correctPal.replace(/_/g, " ")}`}
+          secondLine={`Today's Pal was`}
           aboveButtons={`Continue playing?`}
           firstButton={`home`}
           secondButton={`streak`}
