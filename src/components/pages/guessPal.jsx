@@ -39,9 +39,9 @@ function GuessPal(props) {
   function makeGuess(name) {
     // add guess to the list of guesses
     setGuesses(
-      guesses.concat([
+      [
         <Answer answer={correctPal} name={name} key={allPals[name].index} />,
-      ])
+      ].concat(guesses)
     );
 
     //deletes guessed pal from list of all names and from list of displayed names

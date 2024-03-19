@@ -52,9 +52,9 @@ function GuessPalStreak(props) {
   function makeGuess(name) {
     // add guess to the list of guesses using answer module
     setGuesses(
-      guesses.concat([
+      [
         <Answer answer={correctPal} name={name} key={allPals[name].index} />,
-      ])
+      ].concat(guesses)
     );
 
     //deletes guessed pal from list of all names and from list of displayed names
