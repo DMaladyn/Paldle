@@ -9,6 +9,8 @@ import allPals from "./components/data/pals";
 
 import { Route, Routes } from "react-router-dom";
 
+import { useState, useEffect } from "react";
+
 function App() {
   //all names of pals
   const allNames = Object.keys(allPals);
@@ -58,6 +60,15 @@ function App() {
     107, 124, 17, 78, 30, 76, 13,
   ];
 
+  //manage background photo
+  const [loaded, setLoaded] = useState(false);
+
+  /*   useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 3000);
+  }, []); */
+
   //sets correctPal for daily mode depending on local time
   const timestamp = new Date(2024, 1, 24, 0, 0, 0).getTime();
 
@@ -70,6 +81,24 @@ function App() {
 
   return (
     <div className="app_container">
+      {/* uses low quality image for background and when high quality one loads, it replaces it */}
+      {!loaded ? (
+        <img
+          className={`image background-image`}
+          src={"/graphics/background.jpg"}
+          style={{ opacity: loaded ? 0 : 1 }}
+          alt="Background"
+        />
+      ) : null}
+      <img
+        className={`image background-image`}
+        src={"/graphics/background2_Crop.png"}
+        style={{ opacity: loaded ? 1 : 0 }}
+        alt="Background"
+        onLoad={() => {
+          setLoaded(true);
+        }}
+      />
       <Layout>
         {/* manages which element will be displayed inside layout */}
         <Routes>

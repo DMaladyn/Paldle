@@ -5,7 +5,7 @@ body {
   overflow-x: hidden;
 }
 
-.app_container {
+/* .app_container {
   min-height: 100vh;
   background-image: url("/graphics/background.jpg");
   background-size: cover;
@@ -14,10 +14,27 @@ body {
 }
 
 @media (min-resolution: 1dppx) {
-  /* Load high resolution image for devices with at least 2 device pixels per CSS pixel */
   .app_container {
     background-image: url("/graphics/background2_Crop.png");
   }
+} */
+
+.background-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  z-index: -5;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 body::-webkit-scrollbar-track {
