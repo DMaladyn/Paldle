@@ -9,7 +9,7 @@ function AnswerDisplay(props) {
   //creates array of images of food icons with length dependant on the amount of food consumed by pal
   for (let i = 0; i < props.food.food; i++) {
     foodDisplay.push(
-      <img className={classes.food} src="/icons/food.png" alt="logo"></img>
+      <img className={classes.food} src="food.png" alt="logo"></img>
     );
   }
 
@@ -41,7 +41,10 @@ function AnswerDisplay(props) {
   return (
     <div className={classes.container}>
       <div className={`${classes.notWork} ${classes.name}`}>
-        <img className={classes.icon} src={`/icons/${props.name}.png`}></img>
+        <img
+          className={classes.icon}
+          src={`/iconsResized128/${props.name}_128.png`}
+        ></img>
         <span>{props.name.replace(/_/g, " ")}</span>
       </div>
 
