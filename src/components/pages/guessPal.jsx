@@ -17,7 +17,7 @@ function GuessPal(props) {
 
       setCorrectPal(keys[randomIndex]);
 
-      console.log(correctPal);
+      preloadIcons();
     }
   }, []);
 
@@ -57,6 +57,15 @@ function GuessPal(props) {
 
     //sets value of name input to empty string
     inputRef.current.value = "";
+  }
+
+  function preloadIcons() {
+    const namesToPreload = Object.keys(allPals);
+
+    namesToPreload.forEach((nameToPreload) => {
+      const img = new Image();
+      img.src = `iconsResized64/${nameToPreload}_64.png`;
+    });
   }
 
   //limits pals on the display list to the ones that contain specified substring
