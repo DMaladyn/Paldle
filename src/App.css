@@ -5,19 +5,14 @@ body {
   overflow-x: hidden;
 }
 
-/* .app_container {
+.app_container {
   min-height: 100vh;
-  background-image: url("/graphics/background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-image: url("/graphics/background2_Crop.png"),
+    url("/graphics/background.jpg");
+  background-size: cover, cover;
+  background-position: center, center;
+  background-attachment: fixed, fixed;
 }
-
-@media (min-resolution: 1dppx) {
-  .app_container {
-    background-image: url("/graphics/background2_Crop.png");
-  }
-} */
 
 .background-image {
   position: relative;
