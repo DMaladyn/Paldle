@@ -7,10 +7,17 @@ body {
 
 .app_container {
   min-height: 100vh;
-  background-image: url("/graphics/background2_Crop.png");
+  background-image: url("/graphics/background.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+@media (min-resolution: 1dppx) {
+  /* Load high resolution image for devices with at least 2 device pixels per CSS pixel */
+  .app_container {
+    background-image: url("/graphics/background2_Crop.png");
+  }
 }
 
 body::-webkit-scrollbar-track {
