@@ -24,11 +24,20 @@
   0% {
     opacity: 0;
     transform: scale(1, 0.4);
+    height: 10px;
+    border: solid 0px black;
+  }
+
+  99% {
+    border: solid 0px black;
   }
 
   100% {
     opacity: 1;
     transform: scale(1, 1);
+    height: 52px;
+    overflow-y: visible;
+    border: solid 1px black;
   }
 }
 
