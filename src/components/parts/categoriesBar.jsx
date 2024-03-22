@@ -10,6 +10,17 @@ function CategoriesBar() {
   const [visibility, setVisibility] = useState(0);
   const [text, setText] = useState("");
 
+  /* turns on hover explanations on/off */
+  if (localStorage.getItem("explanation") == null) {
+    localStorage.setItem("explanation", true);
+  }
+
+  const [explanationDisplay, setExplanationDisplay] = useState(
+    JSON.parse(localStorage.getItem("explanation"))
+  );
+
+  console.log(explanationDisplay);
+
   //move hover window to specified spot above category, and set text inside to description of that category
   function moveHoverWindow(x, y, description) {
     setText(description);
@@ -67,11 +78,23 @@ function CategoriesBar() {
   return (
     <div className={classes.categoriesContainer}>
       {/* passing values to HoverExplaination element */}
-      <HoverExplanation
-        visibility={visibility}
-        position={position}
-        text={text}
+      {explanationDisplay ? (
+        <HoverExplanation
+          visibility={visibility}
+          position={position}
+          text={text}
+        />
+      ) : null}
+
+      <img
+        src={explanationDisplay ? "explanationOn.png" : "explanationOff.png"}
+        onClick={() => {
+          localStorage.setItem("explanation", !explanationDisplay);
+          setExplanationDisplay(!explanationDisplay);
+        }}
+        className={classes.explanationSwitch}
       />
+
       <div className={classes.categories}>
         <span>Name</span>
         {/* declaring position and description each category - first width (left) in %, second height (bottom) in px*/}
