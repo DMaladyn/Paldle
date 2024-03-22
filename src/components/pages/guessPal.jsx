@@ -4,6 +4,9 @@ import Answer from "../parts/answer";
 import Victory from "../animations/victory";
 import EndScreenTemplate from "../parts/endScreenTemplate";
 import CategoriesBar from "../parts/categoriesBar";
+
+import preloadIcons from "../functions/preload";
+
 import { useState, useEffect, useRef } from "react";
 
 function GuessPal(props) {
@@ -17,7 +20,7 @@ function GuessPal(props) {
 
       setCorrectPal(keys[randomIndex]);
 
-      preloadIcons();
+      preloadIcons(Object.keys(allPals));
     }
   }, []);
 
@@ -35,6 +38,17 @@ function GuessPal(props) {
   const [palsList, setPalsList] = useState(allNames);
 
   const [displayList, setDisplayList] = useState(false);
+
+  //handle element that blocks you from hovering over guesses after making a guess
+  const [hoverBlocker, setHoverBlocker] = useState(false);
+
+  function blockHover() {
+    setHoverBlocker(true);
+
+    setTimeout(() => {
+      setHoverBlocker(false);
+    }, 1000);
+  }
 
   function makeGuess(name) {
     // add guess to the list of guesses
@@ -57,15 +71,6 @@ function GuessPal(props) {
 
     //sets value of name input to empty string
     inputRef.current.value = "";
-  }
-
-  function preloadIcons() {
-    const namesToPreload = Object.keys(allPals);
-
-    namesToPreload.forEach((nameToPreload) => {
-      const img = new Image();
-      img.src = `iconsResized64/${nameToPreload}_64.png`;
-    });
   }
 
   //limits pals on the display list to the ones that contain specified substring
@@ -108,6 +113,8 @@ function GuessPal(props) {
       <div className={classes.info}></div>
       <div className={classes.game}>
         <div className={classes.inputHolder}>
+          {hoverBlocker ? <div className={classes.blocker}>&nbsp;</div> : null}
+
           {gameInProgress ? (
             <input
               ref={inputRef}
@@ -130,7 +137,10 @@ function GuessPal(props) {
                   <li
                     className={classes.listHolder}
                     key={index}
-                    onClick={() => makeGuess(x)}
+                    onClick={() => {
+                      makeGuess(x);
+                      blockHover();
+                    }}
                   >
                     <div className={classes.listElement}>
                       <img

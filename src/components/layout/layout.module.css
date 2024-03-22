@@ -3,10 +3,12 @@
   margin-left: -20px;
 
   display: inline;
+
+  animation: 0.4s forwards zoom-out;
 }
 
 .logo:hover {
-  transform: scale(1.05, 1.05);
+  animation: 0.4s forwards zoom-in;
 }
 
 .logoLink {
@@ -25,4 +27,22 @@
 
 .main {
   flex-grow: 1;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }

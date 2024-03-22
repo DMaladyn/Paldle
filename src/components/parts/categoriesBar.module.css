@@ -43,13 +43,13 @@
 .explanationSwitch {
   position: absolute;
 
-  left: 1071px;
-  top: 5px;
+  left: 1081px;
+  top: 2px;
 
-  height: 32px;
-  width: 32px;
+  height: 24px;
+  width: 24px;
 
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .explanationSwitch:hover {

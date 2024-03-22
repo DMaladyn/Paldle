@@ -24,11 +24,32 @@
   box-shadow: 0 0 4px black;
 
   border-radius: 6px;
+
+  animation: 0.4s forwards zoom-out;
 }
 
 .linkGuessPal:hover {
   background-color: rgba(101, 177, 253, 0.95);
-  transform: scale(1.05, 1.05);
+
+  animation: 0.4s forwards zoom-in;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
 /* lives selector */

@@ -144,6 +144,19 @@
   font-weight: 600;
 }
 
+/* part that blocks user from hovering over pals after taking a guess */
+.blocker {
+  position: absolute;
+
+  left: -470px;
+  top: 130px;
+
+  width: 1200px;
+  height: 500px;
+
+  opacity: 0;
+}
+
 /* custom scrollbar */
 
 .customScrollbar::-webkit-scrollbar-track {

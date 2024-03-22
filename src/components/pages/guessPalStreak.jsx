@@ -6,6 +6,8 @@ import Streak from "../parts/streak";
 import EndScreenTemplate from "../parts/endScreenTemplate";
 import CategoriesBar from "../parts/categoriesBar";
 
+import preloadIcons from "../functions/preload";
+
 import { useState, useEffect, useRef } from "react";
 
 function GuessPalStreak(props) {
@@ -18,7 +20,7 @@ function GuessPalStreak(props) {
 
     setCorrectPal(keys[randomIndex]);
 
-    console.log(correctPal);
+    preloadIcons(Object.keys(allPals));
   }, []);
 
   let searchParams = new URLSearchParams(location.search);
@@ -48,6 +50,17 @@ function GuessPalStreak(props) {
   const [currentLives, setCurrentLives] = useState(startingLives);
 
   const [loseScreen, setLoseScreen] = useState(false);
+
+  //handle element that blocks you from hovering over guesses after making a guess
+  const [hoverBlocker, setHoverBlocker] = useState(false);
+
+  function blockHover() {
+    setHoverBlocker(true);
+
+    setTimeout(() => {
+      setHoverBlocker(false);
+    }, 1200);
+  }
 
   function makeGuess(name) {
     // add guess to the list of guesses using answer module
@@ -194,6 +207,8 @@ function GuessPalStreak(props) {
       <div className={classes.info}></div>
       <div className={classes.game}>
         <div className={classes.inputHolder}>
+          {hoverBlocker ? <div className={classes.blocker}>&nbsp;</div> : null}
+
           {gameInProgress ? (
             <input
               ref={inputRef}
@@ -220,7 +235,10 @@ function GuessPalStreak(props) {
                   <li
                     className={classes.listHolder}
                     key={index}
-                    onClick={() => makeGuess(x)}
+                    onClick={() => {
+                      makeGuess(x);
+                      blockHover();
+                    }}
                   >
                     <div className={classes.listElement}>
                       <img
