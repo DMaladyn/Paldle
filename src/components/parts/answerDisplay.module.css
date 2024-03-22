@@ -7,7 +7,7 @@
   border-radius: 12px;
   border: solid 1px black;
 
-  margin: 6px;
+  margin: 8px;
 
   font-size: 20px;
   font-weight: bold;
@@ -20,6 +20,11 @@
   animation-timing-function: cubic-bezier(0.51, 0.58, 0.52, 1.55);
 
   overflow-y: hidden;
+}
+
+.container:hover {
+  transform: scale(1.03, 1.03);
+  box-shadow: 0 0 12px rgb(34, 30, 30);
 }
 
 @keyframes animate-pop {

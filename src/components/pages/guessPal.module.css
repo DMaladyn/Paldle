@@ -104,6 +104,10 @@
   cursor: pointer;
 }
 
+.listElement:hover {
+  transform: scale(1.03, 1.03);
+}
+
 /* more section */
 .more {
   padding-bottom: 80px;

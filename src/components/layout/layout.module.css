@@ -5,6 +5,10 @@
   display: inline;
 }
 
+.logo:hover {
+  transform: scale(1.05, 1.05);
+}
+
 .logoLink {
   width: 410px;
   height: 200px;
