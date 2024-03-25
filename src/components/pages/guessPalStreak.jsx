@@ -220,6 +220,7 @@ function GuessPalStreak(props) {
           ) : (
             <div
               className={currentLives > 0 ? classes.youWon : classes.youLost}
+              style={{ fontSize: "22px" }}
             >
               Generating New Pal...
             </div>
