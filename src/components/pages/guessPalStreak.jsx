@@ -10,7 +10,7 @@ import preloadIcons from "../functions/preload";
 
 import { useState, useEffect, useRef } from "react";
 
-function GuessPalStreak(props) {
+function GuessPalStreak() {
   const [correctPal, setCorrectPal] = useState();
 
   //sets correct pal at the start of game

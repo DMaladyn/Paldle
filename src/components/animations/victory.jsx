@@ -1,6 +1,6 @@
 import classes from "./victory.module.css";
 
-import { useState, forwardRef, useImperativeHandle, useEffect } from "react";
+import { useState, forwardRef, useImperativeHandle } from "react";
 
 import JSConfetti from "js-confetti";
 
