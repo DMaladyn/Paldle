@@ -35,7 +35,7 @@ body {
 body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
 
-  background-color: rgb(136, 200, 238);
+  background-color: #a0b7da;
 }
 
 body::-webkit-scrollbar {
@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
 
   height: 224px;
 
-  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
 
   background-color: rgb(13, 128, 223);
 }
