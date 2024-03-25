@@ -171,7 +171,7 @@ function GuessPalStreak(props) {
     }, 3000);
   }
 
-  //closes end screen and changes hp to one matching new query params
+  //closes end screen and changes hp to one matching new (or same) query params
   function closeEndScreen() {
     setLoseScreen(false);
     searchParams = new URLSearchParams(location.search);
