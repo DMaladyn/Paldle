@@ -19,8 +19,7 @@
 /* name input for guess */
 
 .inputHolder {
-  margin: auto;
-  margin-bottom: 30px;
+  margin: 40px auto 25px auto;
 
   width: 250px;
   height: 40px;

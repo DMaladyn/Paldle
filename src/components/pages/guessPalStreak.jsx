@@ -5,6 +5,7 @@ import Victory from "../animations/victory";
 import Streak from "../parts/streak";
 import EndScreenTemplate from "../parts/endScreenTemplate";
 import CategoriesBar from "../parts/categoriesBar";
+import NamesList from "../parts/namesList";
 
 import preloadIcons from "../functions/preload";
 
@@ -204,7 +205,6 @@ function GuessPalStreak() {
 
       <Victory correctPal={correctPal} ref={animationRef} />
 
-      <div className={classes.info}></div>
       <div className={classes.game}>
         <div className={classes.inputHolder}>
           {hoverBlocker ? <div className={classes.blocker}>&nbsp;</div> : null}
@@ -228,33 +228,11 @@ function GuessPalStreak() {
 
           {/* if conditions are met it displays list of pals matching string inside input */}
           {displayList && gameInProgress && (
-            <div
-              className={`${classes.selectWindow} ${classes.customScrollbar}`}
-            >
-              <ul>
-                {palsList.map((x, index) => (
-                  <li
-                    className={classes.listHolder}
-                    key={index}
-                    onClick={() => {
-                      makeGuess(x);
-                      blockHover();
-                    }}
-                  >
-                    <div className={classes.listElement}>
-                      <img
-                        className={classes.listImg}
-                        src={`/iconsResized64/${x}_64.png`}
-                        alt={""}
-                      />
-                      <span className={classes.listName}>
-                        {x.replace(/_/g, " ")}
-                      </span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <NamesList
+              makeGuess={makeGuess}
+              blockHover={blockHover}
+              palsList={palsList}
+            />
           )}
         </div>
         <CategoriesBar />
