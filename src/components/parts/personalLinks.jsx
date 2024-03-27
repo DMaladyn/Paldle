@@ -1,7 +1,5 @@
 import classes from "./personalLinks.module.css";
 
-import githubLogo from "../layoutIcons/github.png";
-
 function PersonalLinks() {
   //my personal links, lie github
   return (
@@ -13,7 +11,7 @@ function PersonalLinks() {
         rel="noreferrer"
         href="https://github.com/DMaladyn"
       >
-        <img className={classes.personalIcon} src={githubLogo} />
+        <img className={classes.personalIcon} src={"github.png"} />
         DMaladyn
       </a>
       <a
