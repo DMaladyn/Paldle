@@ -69,7 +69,7 @@ function App() {
     allNames[dailyOrder[Math.floor((Date.now() - timestamp) / 86400000)]];
 
   return (
-    <div className="app_container">
+    <div className="appContainer">
       <Layout>
         {/* manages which element will be displayed inside layout */}
         <Routes>

@@ -5,7 +5,7 @@ body {
   overflow-x: hidden;
 }
 
-.app_container {
+.appContainer {
   min-height: 100vh;
   background-image: url("/graphics/background2_Crop.png"),
     url("/graphics/background.jpg");
